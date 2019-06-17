@@ -12,6 +12,7 @@ DefaultContentLanguage = "en"
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 
+preserveTaxonomyNames = true
 
 disqusShortname = "https-jane-dev-com"
 
@@ -44,14 +45,16 @@ home = [ "HTML", "RSS" ]
 mediatype = "application/rss"
 baseName = "jane's blog"
 
-# [permalinks]
-#   posts = "/posts/:year/:month/:title/"
+[permalinks]
+  posts = "/:year/:filename/"
 
 [author]
   name = "Jane"
 
 [blackfriday]
   hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true
 
 [taxonomies]
   tag      = "tags"
@@ -63,11 +66,11 @@ baseName = "jane's blog"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
-  # license= '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
+  license= '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
 
   # Metadata mostly used in document's head
-  description = "Hello"
-  keywords = "homepage, blog, science, informatics, development, programming"
+  description = "Jane's blog"
+  keywords = "Hugo, blog, reading, kotlin, java, programming, paython"
   images = [""]
 
   homeSubtitle = "Hello"
@@ -94,7 +97,6 @@ baseName = "jane's blog"
     logoHomeLink = "/"
 
   # Social icons
-
   [[params.social]]
     name = "email"
     url  = "mailto:jane.zhangjin@outlook.com"
