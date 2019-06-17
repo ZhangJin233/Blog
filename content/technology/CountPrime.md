@@ -4,7 +4,7 @@ date: 2019-04-16T16:57:08+08:00
 description: ""
 type: ["blog","tech"]
 tags: ["leetcode"]
-gitment: true
+comments: true
 ---
 
 
