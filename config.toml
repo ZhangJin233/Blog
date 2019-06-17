@@ -1,5 +1,5 @@
 baseURL = "https://jane-dev.com"
-languageCode = "zh-cn"
+languageCode = "en-gb"
 title = "jane's blog"
 paginate = "10"   
 theme = "hello-friend-ng"
