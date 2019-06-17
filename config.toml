@@ -66,11 +66,11 @@ baseName = "jane's blog"
   # license= '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
 
   # Metadata mostly used in document's head
-  description = "hello"
+  description = "Hello"
   keywords = "homepage, blog, science, informatics, development, programming"
   images = [""]
 
-  homeSubtitle = "hello"
+  homeSubtitle = "Hello"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   # gitUrl = ""
@@ -113,13 +113,13 @@ baseName = "jane's blog"
 
 [languages]
   [languages.en]
-    subtitle  = "Hello Friend NG Theme"
-    weight    = 2
+    subtitle  = "Hello"
+    weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
   [languages.zh]
-    subtitle  = "Hello Friend NG Theme"
-    weight    = 1
+    subtitle  = "Hello"
+    weight    = 2
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
 [menu]
