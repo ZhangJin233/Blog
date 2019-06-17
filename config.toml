@@ -56,9 +56,9 @@ baseName = "jane's blog"
   nofollowLinks = true
   noreferrerLinks = true
 
-[taxonomies]
-  tag      = "tags"
-  category = ""
+# [taxonomies]
+#   tag      = "tags"
+#   category = ""
 
 [params]
   dateform        = "Jan 2, 2006"
