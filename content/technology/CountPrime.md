@@ -2,6 +2,7 @@
 title: "Count Prime"
 date: 2019-04-16T16:57:08+08:00
 description: ""
+keywords: ["leetcode","CountPrime","java"]
 type: ["blog","tech"]
 tags: ["leetcode"]
 comments: true

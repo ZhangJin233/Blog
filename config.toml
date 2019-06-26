@@ -70,7 +70,7 @@ baseName = "jane's blog"
 
   # Metadata mostly used in document's head
   description = "Jane's blog"
-  keywords = "Hugo, blog, reading, kotlin, java, programming, paython"
+  keywords = "Hugo, blog, reading, kotlin, java, programming, python"
   images = [""]
 
   homeSubtitle = "Hello"
@@ -106,6 +106,10 @@ baseName = "jane's blog"
     url  = "https://github.com/ZhangJin233/"
 
 
+  [[params.info]]
+    subtitle = "Jane's blog"
+    keywords = "Hugo, blog, reading, kotlin, java, programming, python"
+    description = "Jane's blog"
 
   [params.theme]
     subtitle = "happy every day"

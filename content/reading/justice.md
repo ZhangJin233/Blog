@@ -1,7 +1,8 @@
 ---
 author:
   name: "Jane"
-description: ""
+description: "JUSTICE 公正课笔记"
+keywords: ["JUSTICE","Michael Sandel","迈克尔·桑德尔","公正"]
 type: ["blog","reading"]
 tags: [" "]
 title: JUSTICE 公正课笔记

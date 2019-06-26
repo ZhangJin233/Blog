@@ -1,7 +1,8 @@
 ---
 title: "Happy Number"
 date: 2019-05-02T16:57:08+08:00
-description: ""
+description: "leetcode program HappyNumber's solution"
+keywords: ["leetcode","HappyNumber","java"]
 type: ["Blog","Technology"]
 tags: ["leetcode"]
 comments: true

@@ -1,7 +1,8 @@
 ---
 title: "SingleNumber"
 date: 2019-04-01T16:57:08+08:00
-description: ""
+description: "leetcode program SingleNumber's solution"
+keywords: ["SingleNumber","leetcode","java"]
 type: ["blog","tech"]
 tags: ["leetcode"]
 comments: true
