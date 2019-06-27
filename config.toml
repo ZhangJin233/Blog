@@ -28,6 +28,7 @@ buildFuture  = false
 buildExpored = false
 canonifyURLs = true
 
+disablePathToLower = true
 enableRobotsTXT = true
 enableGitInfo   = false
 enableEmoji     = true
