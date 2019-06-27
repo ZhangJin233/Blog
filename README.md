@@ -1,7 +1,7 @@
 # My Blog
 
 
-[![Build Status](https://travis-ci.org/ZhangJin233/Blog.svg)][travis]
+[![Build Status](https://travis-ci.org/ZhangJin233/Blog.svg?branch=master)][travis]
 
 这是 我 的个人博客，地址：**<https://jane-dev.com>**
 
