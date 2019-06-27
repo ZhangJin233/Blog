@@ -1,6 +1,8 @@
 # My Blog
 
 
+[![Build Status](https://travis-ci.org/ZhangJin233/Blog.svg)][travis]
+
 这是 我 的个人博客，地址：**<https://jane-dev.com>**
 
 使用 Markdown 书写，用 [Hugo](https://gohugo.io/) 生成静态网页，用 Travis IC 部署到 [ZhangJin233.github.io](https://github.com/ZhangJin233/ZhangJin233.github.io) 上。
