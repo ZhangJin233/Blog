@@ -97,7 +97,13 @@ into three main components.
 
 注意事项和说明：
 
+这个项目使用git管理需要测试的代码。此项目只可以使用标准的代码管理程序，如果你不熟悉git，但是熟练其他代码管理工具，比如svn、 Mercurial也是可以使用本项目的。
 
+由于代码长度和单元测试的限制，我简化了测试代码，我们只需要运行代码库中的`tests`文件。
+
+持续集成系统通常在远程web 服务器控制master代码库。在这个例子，我们使用本地代码库代替远程代码库。
+
+持续集成系统不需要运行在fixd分支。所以你可以一次提交运行一次，也可以几次提交运行一次。在这个例子中，定期时间会被触发。也就是说，如果设定5分钟检查一次，那么它运行测试在下一个5分钟
 ## Introduction
 
 The basic structure of a continuous integration system consists of three
