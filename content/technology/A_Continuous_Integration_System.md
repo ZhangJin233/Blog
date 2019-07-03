@@ -5,7 +5,9 @@ draft: true
 author:
   name: "Jane"
 comments: true
-description: ""
+description: "Continuous Integration (CI) systems are dedicated systems used to test
+new code."
+keywords: ["500 lines","Continuous Integration","python"]
 images:
 linktitle: ci
 tags:
