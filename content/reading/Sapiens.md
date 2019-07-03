@@ -8,6 +8,7 @@ tags: [" "]
 title: 《人类简史》读书笔记
 date: 2019-04-28T16:57:08+08:00
 images: ["/static/images/智人.png"]
+linktitle: Sapiens
 comments: true
 ---
 

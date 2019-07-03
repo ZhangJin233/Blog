@@ -9,6 +9,7 @@ title: 《自私的基因》读书笔记
 linktitle: 《自私的基因》读书笔记
 date: 2019-04-28T16:57:08+08:00
 comments: true
+linktitle: TheSelfishGene
 ---
 
 

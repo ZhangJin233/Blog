@@ -6,6 +6,7 @@ author:
 comments: true
 description: "《穷查理宝典》读书笔记"
 keywords: ["穷查理宝典","Charlie Munger","芒格"]
+linktitle: Munger
 images:
 tags:
   - book

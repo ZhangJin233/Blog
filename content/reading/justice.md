@@ -6,7 +6,7 @@ keywords: ["JUSTICE","Michael Sandel","迈克尔·桑德尔","公正"]
 type: ["blog","reading"]
 tags: [" "]
 title: JUSTICE 公正课笔记
-linktitle: justice
+linktitle: Justice
 date: 2019-05-28T16:57:08+08:00
 comments: true
 tags:
