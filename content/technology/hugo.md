@@ -38,13 +38,14 @@ In order to get the HTML content pushed to GitHub Pages, you have to create a se
 
 - Login [Travis CI](www.tracis.eu) with github account,then you will find your github repositories in Travis.
 - Turn on **Blog** repositories and click **Settings**.
+
+{{<figure src="/images/hugo-travis.png" alt="hugo-travis">}}
+
 - Environment Variables：Name fill in "GITHUB_TOKEN",Value fill in your github token.
 - click **Add**.
 
+{{<figure src="/images/travis-settings.png" alt="travis-settings">}}
 
-{{<figure src="//images/hugo-travis1.png" alt="hugo-travis1">}}
-
-{{<figure src="//images/hugo-travis2.png" alt="hugo-travis2">}}
 ### Revise config.toml
 ### Create travis configuration
 ```yml
