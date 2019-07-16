@@ -8,6 +8,6 @@ comments: true
 description: ""
 images:
 tags:
-  - junit
+  - junit 5
 ---
 

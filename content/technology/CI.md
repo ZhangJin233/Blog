@@ -105,7 +105,13 @@ into three main components.
 
 持续集成系统通常在远程web 服务器控制master代码库。在这个例子，我们使用本地代码库代替远程代码库。
 
-持续集成系统不需要运行在fixd分支。所以你可以一次提交运行一次，也可以几次提交运行一次。在这个例子中，定期时间会被触发。也就是说，如果设定5分钟检查一次，那么它运行测试在下一个5分钟
+持续集成系统不需要运行在fixd分支。所以你可以一次提交运行一次，也可以几次提交运行一次。在这个例子中，定期时间会被触发。也就是说，如果设定5分钟检查一次，那么每隔5秒系统就会对5秒内最近的一次提交进行测试。不论这5秒内发生了多少次提交，系统只会对最后一次提交的结果进行一次测试。
+
+持续集成系统是为了检查源码的变化。在实际使用的CI 系统，你可以通过代码库的通知来获取代码更新消息。比如GitHub，提供"post-commit hooks"发送URL提示消息。这种模式下，web服务器监听代码改动URL的消息。由于本地使用会过于复杂，所以我们使用监听模式，代码监听将会检查代码变化而不是等待代码库发送消息。
+
+持续集成系统也需要拥有报告形式，运行测试结果报告也可以以一种可以看见的形式比如网页，呈现给用户。这样，项目组的其他成员也可以看到报告结果。
+
+注意，我们的持续集成系统只是众多中的一种。在这个项目中，将项目简化成3个主要的部分。
 ## Introduction
 
 The basic structure of a continuous integration system consists of three
@@ -153,6 +159,10 @@ of the machines a process was running on becomes defunct).
 
 For the purposes of this project, each of these processes will be locally and
 manually started distinct local ports.
+
+最基础的持续集成系统包括3部分：监听、测试调度和测试执行。监听源码，当源码改动后，发送消息给调度，调度发送给测试执行者需要测试的数字，之后开始测试。
+
+
 
 ### Files in this Project
 
