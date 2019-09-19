@@ -1,6 +1,7 @@
 ---
 title: "Two sum"
 date: 2019-05-01T16:57:08+08:00
+draft: true
 description: "leetcode program TwoSum'java solution"
 keywords: ["Two sum","leetcode","java"]
 type: ["blog","tech"]
