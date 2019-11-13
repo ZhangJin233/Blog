@@ -9,7 +9,7 @@ description: "软件测试"
 keywords:
 images:
 tags:
-  - 软件测试
+  - test
 ---
 ### 一、软件测试基础知识
 
