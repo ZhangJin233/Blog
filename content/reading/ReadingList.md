@@ -1,7 +1,6 @@
 ---
 title: "不定期更新的书单"
 date: 2019-11-13T22:05:45+08:00
-draft: true
 author:
   name: "Jane"
 comments: true
@@ -12,7 +11,7 @@ tags:
   - untagged
 ---
 
-记录自己每年读的书籍和课程
+记录每年读的书籍和课程
 
 
 2019年

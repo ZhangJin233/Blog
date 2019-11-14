@@ -3,11 +3,17 @@ title: "About Me"
 date: 2019-05-29T17:52:38+08:00
 
 ---
+关于我：
 
-记录我的
+主要技能：测试工程师
 
-一些读书笔记
-
-一些技术笔记
+开源项目：
 
 
+
+
+联系我：
+
+GitHub：https://github.com/ZhangJin233
+
+Email：jane.zhangjin@outlook.com
