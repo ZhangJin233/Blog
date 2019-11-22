@@ -160,6 +160,74 @@ Dog dog1 = new Dog(2, 10);//通过new关键词创建了一个Dog对象dog1
 int age = dog1.getAge();//调用dog1的getAge()方法
 dog1.run();//调用dog1的run()方法
 ```
+
+#### **抽象类**####
+
+下面这段代码是一个比较典型的抽象类的使用场景（模板设计模式）。Logger 是一个记录日志的抽象类，FileLogger 和 MessageQueueLogger 继承 Logger，分别实现两种不同的日志记录方式：记录日志到文件中和记录日志到消息队列中。FileLogger 和 MessageQueueLogger 两个子类复用了父类 Logger 中的 name、enabled、minPermittedLevel 属性和 log() 方法，但因为这两个子类写日志的方式不同，它们又各自重写了父类中的 doLog() 方法。
+
+```java
+
+// 抽象类
+public abstract class Logger {
+  private String name;
+  private boolean enabled;
+  private Level minPermittedLevel;
+
+  public Logger(String name, boolean enabled, Level minPermittedLevel) {
+    this.name = name;
+    this.enabled = enabled;
+    this.minPermittedLevel = minPermittedLevel;
+  }
+  
+  public void log(Level level, String message) {
+    boolean loggable = enabled && (minPermittedLevel.intValue() <= level.intValue());
+    if (!loggable) return;
+    doLog(level, message);
+  }
+  
+  protected abstract void doLog(Level level, String message);
+}
+// 抽象类的子类：输出日志到文件
+public class FileLogger extends Logger {
+  private Writer fileWriter;
+
+  public FileLogger(String name, boolean enabled,
+    Level minPermittedLevel, String filepath) {
+    super(name, enabled, minPermittedLevel);
+    this.fileWriter = new FileWriter(filepath); 
+  }
+  
+  @Override
+  public void doLog(Level level, String mesage) {
+    // 格式化level和message,输出到日志文件
+    fileWriter.write(...);
+  }
+}
+// 抽象类的子类: 输出日志到消息中间件(比如kafka)
+public class MessageQueueLogger extends Logger {
+  private MessageQueueClient msgQueueClient;
+  
+  public MessageQueueLogger(String name, boolean enabled,
+    Level minPermittedLevel, MessageQueueClient msgQueueClient) {
+    super(name, enabled, minPermittedLevel);
+    this.msgQueueClient = msgQueueClient;
+  }
+  
+  @Override
+  protected void doLog(Level level, String mesage) {
+    // 格式化level和message,输出到消息中间件
+    msgQueueClient.send(...);
+  }
+}
+```
+
+**抽象类的特性：**
+
+- 抽象类不允许被实例化，只能被继承。也就是说，你不能 new 一个抽象类的对象出来（Logger logger = new Logger(…); 会报编译错误）。
+- 抽象类可以包含属性和方法。方法既可以包含代码实现（比如 Logger 中的 log() 方法），也可以不包含代码实现（比如 Logger 中的 doLog() 方法）。不包含代码实现的方法叫作抽象方法。
+- 子类继承抽象类，必须实现抽象类中的所有抽象方法。对应到例子代码中就是，所有继承 Logger 抽象类的子类，都必须重写 doLog() 方法。
+
+
 #### **权限修饰符**####
 
 在前面的代码示例中，我们多次用到private、public，它们和protected一起，构成了Java语言的三个权限修饰符。权限修饰符可以修饰函数、成员变量。
@@ -278,5 +346,102 @@ public class Dog implements Runnable {
   public void run() { //实现接口中定义的run()方法
     // ...
   }
+}
+```
+**接口的特性：**
+
+- 接口不能包含属性（也就是成员变量）。
+- 接口只能声明方法，方法不能包含代码实现。
+- 类实现接口的时候，必须实现接口中声明的所有方法。
+
+#### **容器**####
+
+Java提供了一些现成的容器。容器可以理解为一些工具类，底层封装了各种数据结构。比如ArrayList底层就是数组，LinkList底层就是链表，HashMap底层就是散列表。这些容器我们可以直接拿来使用。具体代码如下：
+
+```java
+public class DemoA {
+  private ArrayList<User> users;
+  
+  public void addUser(User user) {
+    users.add(user);
+  }
+}
+```
+
+#### **异常处理**####
+
+Java提供了异常出错机制，可以直接使用jdk提供的现成类，也可以自定义异常。在Java中，我们通过关键字throw来抛出一个异常，通过throws声明函数抛出异常，通过try-catch-finally语句来捕获异常。代码示例：
+
+```java
+public class UserNotFoundException extends Exception { // 自定义一个异常
+  public UserNotFoundException() {
+    super();
+  }
+
+  public UserNotFoundException(String message) {
+    super(message);
+  }
+
+  public UserNotFoundException(String message, Throwable e) {
+    super(message, e);
+  }
+}
+
+public class UserService {
+  private UserRepository userRepo;
+  public UserService(UseRepository userRepo) {
+    this.userRepo = userRepo;
+  }
+
+  public User getUserById(long userId) throws UserNotFoundException {
+    User user = userRepo.findUserById(userId);
+    if (user == null) { // throw用来抛出异常
+      throw new UserNotFoundException();//代码从此处返回
+    }
+    return user;
+  }
+}
+
+public class UserController {
+  private UserService userService;
+  public UserController(UserService userService) {
+    this.userService = userService;
+  }
+  
+  public User getUserById(long userId) {
+    User user = null;
+    try { //捕获异常
+      user = userService.getUserById(userId);
+    } catch (UserNotFoundException e) {
+      System.out.println("User not found: " + userId);
+    } finally { //不管异常会不会发生，finally包裹的语句块总会被执行
+      System.out.println("I am always printed.");
+    }
+    return user;
+  }
+}
+```
+
+#### **package包**####
+
+Java通过package关键字来分门别类的组织类，通过import关键字来引入类或者package。具体代码如下：
+
+```java
+/*class DemoA*/
+package com.xzg.cd; // 包名com.xzg.cd
+
+public class DemoA {
+  //...
+}
+
+/*class DemoB*/
+package com.xzg.alg;
+
+import java.util.HashMap; // Java工具包JDK中的类
+import java.util.Map;
+import com.xzg.cd.DemoA;
+
+public class DemoB {
+  //...
 }
 ```
