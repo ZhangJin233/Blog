@@ -135,6 +135,10 @@ baseName = "jane's blog"
   #   name       = "Blog"
   #   url        = "posts/"
   [[menu.main]]
+    identifier = "movie"
+    name       = "Movie"
+    url        = "movie/"
+  [[menu.main]]
     identifier = "tech"
     name       = "Technology"
     url        = "technology/"
