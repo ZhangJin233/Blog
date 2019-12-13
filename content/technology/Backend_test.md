@@ -52,6 +52,13 @@ https://github.com/SmartBear/soapui
 
 https://github.com/spockframework/spock
 
+#### Test Report####
+
+1、allure2
+
+https://github.com/allure-framework/allure2
+
+
 #### unit test####
 
 1、A Spring Boot application with lots of sample tests
