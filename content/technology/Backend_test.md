@@ -58,6 +58,10 @@ https://github.com/spockframework/spock
 
 https://github.com/allure-framework/allure2
 
+2、extentreports   Extent Framework Community edition, Java
+
+https://github.com/extent-framework/extentreports-java
+
 
 #### unit test####
 
