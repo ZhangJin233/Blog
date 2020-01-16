@@ -106,17 +106,17 @@ baseName = "阿金's blog"
     name = "github"
     url  = "https://github.com/ZhangJin233/"
 
-  [[params.social]]
-    name = "zhihu"
-    url  = "https://www.zhihu.com/people/jane-dev/activities"
+  # [[params.social]]
+  #   name = "zhihu"
+  #   url  = "https://www.zhihu.com/people/jane-dev/activities"
 
   [[params.social]]
     name = "bilibili"
     url  = "https://space.bilibili.com/316253226"
 
-  [[params.social]]
-    name = "weibo"
-    url  = "//weibo.com/jane233"
+  # [[params.social]]
+  #   name = "weibo"
+  #   url  = "//weibo.com/jane233"
 
 
   [[params.info]]
