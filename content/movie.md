@@ -15,6 +15,17 @@ tags:
 
 1、[别告诉她](https://movie.douban.com/subject/30390144/)
 
+2、[1917](https://movie.douban.com/subject/30252495/)
+
+3、[归来](https://movie.douban.com/subject/21352814/)
+
+4、[末代皇帝](https://movie.douban.com/subject/1293172/)
+
+5、[杀人回忆](https://movie.douban.com/subject/1300299/)
+
+6、[出租车司机](https://www.rottentomatoes.com/m/a_taxi_driver_2017)
+
+7、[新世界](https://movie.douban.com/subject/10437779/)
 
 
 #### 2019
