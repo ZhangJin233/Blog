@@ -793,7 +793,8 @@ void f() throws TooBig，TooSmall{}
 
 
 ```
-catch 怎么匹配异常
+**catch 怎么匹配异常**
+
 is-A的关系
 
 就是说，抛出的子类异常会被父类异常的catch给捕捉到
