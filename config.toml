@@ -110,10 +110,13 @@ baseName = "阿金's blog"
   #   name = "zhihu"
   #   url  = "https://www.zhihu.com/people/jane-dev/activities"
 
-  [[params.social]]
-    name = "bilibili"
-    url  = "https://space.bilibili.com/316253226"
+  # [[params.social]]
+  #   name = "bilibili"
+  #   url  = "https://space.bilibili.com/316253226"
 
+  # [[params.adsence]]
+  #   client = "ca-pub-5391418823177892"
+  #   inArticleSlot  = "5391418823177892"
   # [[params.social]]
   #   name = "weibo"
   #   url  = "//weibo.com/jane233"
