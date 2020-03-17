@@ -114,9 +114,9 @@ baseName = "阿金's blog"
   #   name = "bilibili"
   #   url  = "https://space.bilibili.com/316253226"
 
-  # [[params.adsence]]
-  #   client = "ca-pub-5391418823177892"
-  #   inArticleSlot  = "5391418823177892"
+  [[params.adsence]]
+    client = "ca-pub-5391418823177892"
+    inArticleSlot  = "5391418823177892"
   # [[params.social]]
   #   name = "weibo"
   #   url  = "//weibo.com/jane233"

@@ -94,3 +94,7 @@ Tools -》Map Remote
 
 点击 【Add】 添加需要限制网速的url，最后点击OK即可
 <img src="/images/charles12.png" height="450px" width="400px" >
+
+
+<!--adsense-->
+
