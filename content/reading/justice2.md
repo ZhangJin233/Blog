@@ -1,5 +1,5 @@
 ---
-title: "Justice2"
+title: "JUSTICE 公正课笔记 3-4"
 date: 2020-03-18T13:13:19+08:00
 draft: true
 author:
