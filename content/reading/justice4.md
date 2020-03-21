@@ -1,9 +1,8 @@
 ---
 title: "JUSTICE 公正课笔记 7-8"
 date: 2020-03-19T23:08:55+08:00
-draft: true
 author:
-  name: "Jane"
+  name: "阿金"
 comments: true
 description: "JUSTICE 公正课笔记"
 keywords: ["JUSTICE","Michael Sandel","迈克尔·桑德尔","公正"]
