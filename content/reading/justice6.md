@@ -1,7 +1,6 @@
 ---
 title: "JUSTICE 公正课笔记 11-12"
 date: 2020-03-21T22:08:56+08:00
-draft: true
 author:
   name: "阿金"
 comments: true
