@@ -1,7 +1,6 @@
 ---
 title: "JUSTICE 公正课笔记 19-20"
 date: 2020-04-01T10:01:01+08:00
-draft: true
 author:
   name: "阿金"
 comments: true
