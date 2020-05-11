@@ -3,9 +3,9 @@ title: "Adb命令"
 date: 2019-06-18T18:23:30+08:00
 draft: true
 author:
-  name: "Jane"
+  name: "阿金"
 comments: true
-description: ""
+description: "Adb命令"
 images:
 tags:
   - adb
