@@ -17,12 +17,6 @@ GitHub：https://github.com/ZhangJin233
 
 Email：jane.zhangjin@outlook.com
 
-wechat：
-
-备注信息写博客
-
-<img src="/images/wechat.JPG" height="200px" width="200px" >
-
 ----------------------------
 
 

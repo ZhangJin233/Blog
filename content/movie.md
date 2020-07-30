@@ -27,6 +27,10 @@ tags:
 
 7、[新世界](https://movie.douban.com/subject/10437779/)
 
+8、[隐秘的角落](https://movie.douban.com/subject/33404425/)
+
+9、[春潮](https://movie.douban.com/subject/27186348/)
+
 
 #### 2019
 1、[《暴裂无声》](https://movie.douban.com/subject/26647117/)
