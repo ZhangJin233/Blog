@@ -31,18 +31,22 @@ tags:
 
 9、[春潮](https://movie.douban.com/subject/27186348/)
 
+10、[妙先生](https://movie.douban.com/subject/34888476/)
+
+11、[星际穿越 IMAX](https://movie.douban.com/subject/1889243/)
+
 
 #### 2019
-1、[《暴裂无声》](https://movie.douban.com/subject/26647117/)
+1、[暴裂无声](https://movie.douban.com/subject/26647117/)
 
-2、[《江湖儿女》](https://movie.douban.com/subject/26972258/)
+2、[江湖儿女](https://movie.douban.com/subject/26972258/)
 
-3、[ 绿皮书 ](https://movie.douban.com/subject/27060077/)
+3、[绿皮书](https://movie.douban.com/subject/27060077/)
 
-4、[ 小丑 ](https://movie.douban.com/subject/27119724/)
+4、[小丑](https://movie.douban.com/subject/27119724/)
 
 5、[波西米亚狂想曲](https://movie.douban.com/subject/5300054/)
 
-6、[寄生虫 ](https://movie.douban.com/subject/27010768/)
+6、[寄生虫](https://movie.douban.com/subject/27010768/)
 
-7、[ 安娜 ](https://movie.douban.com/subject/27166976/)
+7、[安娜](https://movie.douban.com/subject/27166976/)
