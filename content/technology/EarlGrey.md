@@ -1,7 +1,6 @@
 ---
 title: "EarlGrey2 cocoapods 安装 及 使用 "
 date: 2020-11-27T11:06:20+08:00
-draft: true
 author:
   name: "阿金"
 comments: true
