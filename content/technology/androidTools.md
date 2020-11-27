@@ -115,6 +115,17 @@ https://github.com/fastlane/fastlane
 
 https://developer.android.com/studio/test/espresso-test-recorder
 
+10、Barista    The one who serves a great Espresso
+
+https://github.com/AdevintaSpain/Barista
+
+11、Kaspresso  Kaspresso is a great framework for UI testing. Based on Espresso and UI Automator, Kaspresso provides a wide range of additional amazing features
+
+https://github.com/KasperskyLab/Kaspresso
+
+12、BusyBee BusyBee is an alternative API for IdlingResources in Espresso tests
+
+https://github.com/americanexpress/busybee
 
 #### 设备显示####
 
@@ -171,6 +182,10 @@ https://github.com/google/EarlGrey
 2、Keep It Functional - An iOS Functional Testing Framework
 
 https://github.com/kif-framework/KIF
+
+3、Bluepill is a reliable iOS testing tool that runs UI tests using multiple simulators on a single machine
+
+https://github.com/linkedin/bluepill
 
 #### iOS integration tests####
 
