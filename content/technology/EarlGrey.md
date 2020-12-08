@@ -96,3 +96,35 @@ http://google.github.io/EarlGrey/index.html
 
 https://github.com/google/EarlGrey/blob/earlgrey2/Demo/EarlGreyExample/EarlGreyExampleUITests/EarlGreyExampleUITests.m
 
+
+
+三、Tapping system alert using EarlGrey 2.0 & Swift or objective-c
+
+##### objective-c
+
+``` swift
+
+- (void) testButterAlerts{
+    //Notifications
+    XCTAssertTrue([EarlGrey selectElementWithMatcher:grey_systemAlertViewShown()]);
+    XCTAssertTrue([EarlGrey selectElementWithMatcher:grey_buttonTitle(@"“APP”想给您发送通知")]);
+    XCTAssertTrue([self grey_waitForAlertVisibility:YES withTimeout:1]);
+    XCTAssertTrue([self grey_acceptSystemDialogWithError:nil]);
+    XCTAssertTrue([self grey_waitForAlertVisibility:NO withTimeout:1]); 
+}
+
+```
+
+##### swift
+
+
+``` swift
+
+func testExample() {
+    let app = XCUIApplication()
+    app.launch()
+    XCTAssertTrue(grey_wait(forAlertVisibility: true, withTimeout: 2))
+    XCTAssertTrue(grey_acceptSystemDialogWithError(nil))
+    XCTAssertTrue(grey_wait(forAlertVisibility: false, withTimeout: 1))    
+}
+```
