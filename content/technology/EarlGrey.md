@@ -92,6 +92,8 @@ EarlGrey 1.0 is a white-box testing tool that allows you to interact with the ap
 
 可以参考官方文档以及 demo：
 
+https://github.com/google/EarlGrey/blob/earlgrey2/Tests/Functional/Sources/SystemAlertHandlingTest_IOS13OrLater.m
+
 http://google.github.io/EarlGrey/index.html
 
 https://github.com/google/EarlGrey/blob/earlgrey2/Demo/EarlGreyExample/EarlGreyExampleUITests/EarlGreyExampleUITests.m
