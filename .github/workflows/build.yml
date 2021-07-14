@@ -25,6 +25,7 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3	# 一个自动发布github pages的action
+        if: github.ref == 'refs/heads/main'
         with:
           # github_token: ${{ secrets.GITHUB_TOKEN }} 该项适用于发布到源码相同repo的情况，不能用于发布到其他repo
           external_repository: ZhangJin233/ZhangJin233.github.io	# 发布到哪个repo
