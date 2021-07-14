@@ -35,3 +35,5 @@ jobs:
           publish_dir: ./public	# 注意这里指的是要发布哪个文件夹的内容，而不是指发布到目的仓库的什么位置，因为hugo默认生成静态网页到public文件夹，所以这里发布public文件夹里的内容
           publish_branch: master	# 发布到哪个branch
           COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+          enable_jekyll: true
+          allow_empty_commit: true
