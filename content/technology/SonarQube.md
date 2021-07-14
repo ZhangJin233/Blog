@@ -1,7 +1,6 @@
 ---
 title: "docker 搭建SonarQube 并检测项目"
 date: 2020-05-07T10:42:56+08:00
-draft: true
 author:
   name: "阿金"
 comments: true
