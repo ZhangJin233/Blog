@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest	# 在什么环境运行任务
     steps:
       - uses: actions/checkout@v2	# 引用actions/checkout这个action，与所在的github仓库同名
-        with:
+#         with:
 #           submodules: true  # Fetch Hugo themes (true OR recursive) 获取submodule主题
 #           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
