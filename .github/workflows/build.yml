@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy: # 任务名自取
-    runs-on: ubuntu-18.04	# 在什么环境运行任务
+    runs-on: ubuntu-latest	# 在什么环境运行任务
     steps:
       - uses: actions/checkout@v2	# 引用actions/checkout这个action，与所在的github仓库同名
         with:
@@ -18,7 +18,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2	# hugo官方提供的action，用于在任务环境中获取hugo
         with:
           hugo-version: 'latest'	# 获取最新版本的hugo
-          # extended: true
+          extended: true
 
       - name: Build
         run: hugo --minify	# 使用hugo构建静态网页
@@ -28,6 +28,8 @@ jobs:
         with:
           # github_token: ${{ secrets.GITHUB_TOKEN }} 该项适用于发布到源码相同repo的情况，不能用于发布到其他repo
           external_repository: ZhangJin233/ZhangJin233.github.io	# 发布到哪个repo
+          CNAME: https://jane-dev.com/
           personal_token: ${{ secrets.BLOG_ACCESS_TOKEN }}	# 发布到其他repo需要提供上面生成的personal access token
           publish_dir: ./public	# 注意这里指的是要发布哪个文件夹的内容，而不是指发布到目的仓库的什么位置，因为hugo默认生成静态网页到public文件夹，所以这里发布public文件夹里的内容
           publish_branch: master	# 发布到哪个branch
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
