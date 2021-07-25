@@ -32,7 +32,7 @@ jobs:
           publish_branch: master  # deploying branch
           commit_message: ${{ github.event.head_commit.message }}
           CNAME: https://jane-dev.com/
-          personal_token: ${{ secrets.BLOG_ACCESS_TOKEN }}	发布到其他repo需要提供上面生成的personal access token
+          personal_token: ${{ secrets.BLOG_ACCESS_TOKEN }}	#发布到其他repo需要提供上面生成的personal access token
 
 #           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }} # 这里的 ACTIONS_DEPLOY_KEY 则是上面设置 Private Key的变量名
 #           github_token: ${{ secrets.GITHUB_TOKEN }}  该项适用于发布到源码相同repo的情况，不能用于发布到其他repo
