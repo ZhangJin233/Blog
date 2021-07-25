@@ -9,7 +9,7 @@ jobs:
   deploy: # 任务名自取
     runs-on: ubuntu-latest	# 在什么环境运行任务
     steps:
-      - uses: actions/checkout@v2	# 引用actions/checkout这个action，与所在的github仓库同名
+      - uses: actions/checkout@v1	# 引用actions/checkout这个action，与所在的github仓库同名
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive) 获取submodule主题
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
@@ -28,7 +28,7 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }} # 这里的 ACTIONS_DEPLOY_KEY 则是上面设置 Private Key的变量名
           external_repository: ZhangJin233/ZhangJin233.github.io # Pages 远程仓库 
-          publish_dir: ""
+          publish_dir: ./public
           keep_files: false # remove existing files
           publish_branch: master  # deploying branch
           commit_message: ${{ github.event.head_commit.message }}
