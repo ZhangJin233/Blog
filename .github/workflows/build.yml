@@ -17,7 +17,7 @@ jobs:
       - name: Setup Hugo	# 步骤名自取
         uses: peaceiris/actions-hugo@v2	# hugo官方提供的action，用于在任务环境中获取hugo
         with:
-          hugo-version: '0.85.0'	# 获取最新版本的hugo
+          hugo-version: 'latest'	# 获取最新版本的hugo
 #           extended: true
 
       - name: Build
@@ -25,6 +25,7 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3	# 一个自动发布github pages的action
+        if: github.ref == 'refs/heads/main'
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }} # 这里的 ACTIONS_DEPLOY_KEY 则是上面设置 Private Key的变量名
           external_repository: ZhangJin233/ZhangJin233.github.io # Pages 远程仓库 
