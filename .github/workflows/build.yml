@@ -1,4 +1,4 @@
-name: build # 名字自取
+name: github pages # 名字自取
 
 on:
   push:
@@ -20,8 +20,12 @@ jobs:
           hugo-version: 'latest'	# 获取最新版本的hugo
 #           extended: true
 
+      - name: Clean public directory
+        run: rm -rf public
+
       - name: Build
-        run: hugo --minify	# 使用hugo构建静态网页
+        run: hugo --minify
+
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3	# 一个自动发布github pages的action
