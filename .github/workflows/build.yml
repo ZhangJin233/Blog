@@ -32,9 +32,10 @@ jobs:
           keep_files: false # remove existing files
           publish_branch: master  # deploying branch
           commit_message: ${{ github.event.head_commit.message }}
+          CNAME: https://jane-dev.com/
+          personal_token: ${{ secrets.BLOG_ACCESS_TOKEN }}	发布到其他repo需要提供上面生成的personal access token
+
         
 #           github_token: ${{ secrets.GITHUB_TOKEN }}  该项适用于发布到源码相同repo的情况，不能用于发布到其他repo
-#           CNAME: https://jane-dev.com/
-#           personal_token: ${{ secrets.BLOG_ACCESS_TOKEN }}	发布到其他repo需要提供上面生成的personal access token
 #           enable_jekyll: true
 #           allow_empty_commit: true
