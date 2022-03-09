@@ -11,25 +11,25 @@ jobs:
     steps:
       - uses: actions/checkout@v2	# 引用actions/checkout这个action，与所在的github仓库同名
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive) 获取submodule主题
+          submodules: recursive  # Fetch Hugo themes (true OR recursive) 获取submodule主题
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo	# 步骤名自取
         uses: peaceiris/actions-hugo@v2	# hugo官方提供的action，用于在任务环境中获取hugo
         with:
-          hugo-version: 'latest'	# 获取最新版本的hugo
+          hugo-version: '0.74.2'	# 获取最新版本的hugo
 #           extended: true
 
-      - name: Clean public directory
-        run: rm -rf public
+      # - name: Clean public directory
+      #   run: rm -rf public
 
       - name: Build
-        run: hugo --gc --minify --cleanDestinationDir
+        run: hugo --minify
 
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3	# 一个自动发布github pages的action
-        if: github.ref == 'refs/heads/main'
+        # if: github.ref == 'refs/heads/main'
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }} # 这里的 ACTIONS_DEPLOY_KEY 则是上面设置 Private Key的变量名
           external_repository: ZhangJin233/ZhangJin233.github.io # Pages 远程仓库 
@@ -38,7 +38,7 @@ jobs:
           publish_branch: master  # deploying branch
           commit_message: ${{ github.event.head_commit.message }}
           CNAME: https://jane-dev.com/
-#           personal_token: ${{ secrets.BLOG_ACCESS_TOKEN }}	#发布到其他repo需要提供上面生成的personal access token
+          personal_token: ${{ secrets.BLOG_ACCESS_TOKEN }}	#发布到其他repo需要提供上面生成的personal access token
 
 #           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }} # 这里的 ACTIONS_DEPLOY_KEY 则是上面设置 Private Key的变量名
 #           github_token: ${{ secrets.GITHUB_TOKEN }}  该项适用于发布到源码相同repo的情况，不能用于发布到其他repo
