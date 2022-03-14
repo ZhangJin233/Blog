@@ -1,5 +1,5 @@
 ---
-title: "IOS启动时间 "
+title: "IOS签名机制 "
 date: 2020-05-07T12:17:55+08:00
 draft: true
 author:
@@ -12,4 +12,8 @@ tags:
   - iOS
   - 性能测试
 ---
-### iOS启动时间
+### 一、加密
+
+### 二、签名
+
+### 三、App Store 和 dev包
