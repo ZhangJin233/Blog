@@ -23,9 +23,9 @@ dataDir      = "data"
 layoutDir    = "layouts"
 publishDir   = "public"
 
-buildDrafts  = false
-buildFuture  = false
-buildExpored = false
+buildDrafts  = true
+buildFuture  = true
+buildExpored = true
 canonifyURLs = true
 
 disablePathToLower = true

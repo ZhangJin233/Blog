@@ -1,7 +1,6 @@
 ---
 title: "RemoveDuplicatesfromSortedArray"
 date: 2019-08-14T11:58:48+08:00
-draft: true
 author:
   name: "Jane"
 comments: true
