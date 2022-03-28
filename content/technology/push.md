@@ -1,7 +1,6 @@
 ---
 title: "推送测试"
 date: 2022-03-28T14:23:07+08:00
-draft: true
 author:
   name: "Jane"
 comments: true
@@ -9,7 +8,7 @@ description: ""
 keywords:
 images:
 tags:
-  - untagged
+  - 推送
 ---
 
 一、开发iOS系统中的Push推送，通常有以下4种情况：
