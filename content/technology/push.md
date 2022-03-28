@@ -47,7 +47,9 @@ APNs主要用于以下场景：当用户主动杀掉 APP，或者 APP 进入后�
 
 三、iOS推送流程
 
-<img src="/images/push.png" height="400px" width="600px">
+
+{{< image src="/images/push.png" alt="Hello Friend" position="center" style="border-radius: 8px;" >}}
+
 
 
 iOS 客户端远程消息推送的实现可以分为以下几个流程：
@@ -64,7 +66,8 @@ iOS 客户端远程消息推送的实现可以分为以下几个流程：
 
 四、iOS推送要点测试：
 
-<img src="/images/push2.png" height="600px" width="600px">
+
+{{< image src="/images/push2.png" alt="Hello Friend" position="center" style="border-radius: 8px;" >}}
 
 
 五、push调试工具

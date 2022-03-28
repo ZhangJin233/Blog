@@ -17,7 +17,9 @@ tags:
 大部分人选择开向侧轨，这样做的原则是“牺牲一人保全五人”。
 
 更换案例的条件：假如我不是电车司机，而是站在桥上的旁观者，身边正有一个大胖子，我只要把他推下去，也能阻止电车撞向前面的五人。这时，我会怎么做？
-<img src="/images/Trolley_problem.png" height="400px" width="600px">
+
+{{< image src="/images/Trolley_problem.png" alt="Hello Friend" position="center" style="border-radius: 8px;" >}}
+
 绝大部分人都拒绝这一行为。同样是“牺牲一人保全五人”，这个原则出现了什么问题？
 
 

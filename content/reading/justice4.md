@@ -23,9 +23,7 @@ tags:
 
 作为英国历史上最伟大的哲学家之一，在知识论上，洛克与乔治·贝莱克、大卫·休谟三人被列为英国经验主义的代表人物，但他也在社会契约理论上做出重要贡献。
 
-
-
-<img src="/images/JohnLocke.png" height="500px" width="400px" >
+{{< image src="/images/JohnLocke.png" alt="JohnLocke" position="center" style="border-radius: 8px;" >}}
 
 
 约翰洛克是自由主义者强有力的盟友，他的观点：

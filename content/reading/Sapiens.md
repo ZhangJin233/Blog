@@ -75,10 +75,11 @@ comments: true
 ### 智人
 
 <!-- {{<figure src="/images/logo1.png" alt="logo image" height="200" width="200">}} -->
+{{< image src="/images/HomoSapiens.png" alt="HomoSapiens" position="center" style="border-radius: 8px;" >}}
 
-{{<figure src="/images/HomoSapiens.png" alt="HomoSapiens">}}
 
 ### 全书逻辑图
 
-{{<figure src="/images/history.png" alt="history">}}
+{{< image src="/images/history.png"  position="center" style="border-radius: 8px;" >}}
+
 
