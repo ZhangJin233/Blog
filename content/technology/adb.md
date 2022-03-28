@@ -72,6 +72,9 @@ adb kill 'pid' 杀死进程
 
 adb reboot 重启手机
 
+adb shell dumpsys activity | grep "mResume"  查看启动activity
+
+
 
 aapt命令：
 
