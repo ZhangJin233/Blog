@@ -1,5 +1,5 @@
 ---
-title: "mac 安装Appium环境 及 iOS真机启动"
+title: "How To Setup Appium Test Environment For Mac"
 date: 2020-05-14T14:04:42+08:00
 author:
   name: "阿金"
@@ -11,14 +11,14 @@ tags:
   - test
 ---
 
------------------准备工作-------------------
+-----------------Preparation-------------------
 
 1、Install Java JDK latest version
 
 https://www.oracle.com/technetwork/java/javase/downloads/index.html
 
 
-设置Android 、Java环境变量,Android 的环境路径在preference/sdk下
+setting Java Path,Android Path
 
 java env
 ```
@@ -176,5 +176,37 @@ https://github.com/appium/appium/issues/13307
 
 - 'assign' property of object type may become a dangling reference; consider using 'unsafe_unretained'
 
-assign update with strong 
+
+
+get iphone's UUID and APP's bundleID
+
+{{< image src="/images/appium.png" alt="IAP" position="center" style="border-radius: 8px;" >}}
+
+use tidevice launch the WebDriverAgent
+
+tidevice:https://github.com/alibaba/taobao-iphone-device
+
+```shell
+# running WebDriverAgent and listen on port 8200 
+$ tidevice wdaproxy -B com.facebook.wda.WebDriverAgent.Runner --port 8200
+```
+open terminal:
+
+```shell
+iproxy 8100:8200
+```
+lastly, launch appium :)
+
+**some error**
+
+- can not get session ID
+
+if you can not get session ID
+
+open a terminal,put this :
+
+```shell
+curl -X POST -d '{"capabilities": {}, "desiredCapabilities": {}}' 'http://localhost:8100/session'
+```
+
 
