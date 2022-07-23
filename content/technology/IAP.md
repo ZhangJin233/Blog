@@ -94,6 +94,21 @@ Request 方法就能获取到上一章说的 Product 类型。传入需要的 Pr
 
 {{< image src="/images/IAP.png" alt="IAP" position="center" style="border-radius: 8px;" >}}
 
+#### 退款流程
+苹果的Consumption API 实际上就是为我们提供了一个退款前置查询的能力，其整个交互过程如下：
+
+1、用户退款
+
+2、苹果收到退款请求后，会在 48 小时内进行审核，同时发送 CONSUMPTION_REQUEST 通知至我们
+
+3、我们收到 CONSUMPTION_REQUEST 通知后，需要在 12 小时内，调用 Consumption API 进行请求，告知苹果用户信息
+
+4、苹果根据我们反馈的信息，结合 AppleID 信息，对退款用户进行审核（需要注意的是，苹果不会完全采信我们信息，仅用做参考）
+
+5、苹果同意退款
+
+6、我们收到退款通知后，给予苹果正常回包，并进行索回等操作
+
 ### 三、测试准备：
 1、准备沙盒账户
 登录苹果开发者后台--App Store Connect--用户和访问--沙盒--测试员--添加，可以选择相应的地区，如果不涉及海外用户一般选择中国地区。
