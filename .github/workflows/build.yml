@@ -45,9 +45,9 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v3
+      # - name: Setup Pages
+      #   id: pages
+      #   uses: actions/configure-pages@v3
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
@@ -64,6 +64,14 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./public
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }} # 这里的 ACTIONS_DEPLOY_KEY 则是上面设置 Private Key的变量名
+          external_repository: ZhangJin233/ZhangJin233.github.io # Pages 远程仓库 
+          publish_dir: ./public
+          keep_files: false # remove existing files
+          publish_branch: master  # deploying branch
+          commit_message: ${{ github.event.head_commit.message }}
+          CNAME: https://jane-dev.com/
+          personal_token: ${{ secrets.BLOG_ACCESS_TOKEN }}
 
   # Deployment job
   deploy:
