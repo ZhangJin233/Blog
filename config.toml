@@ -23,7 +23,7 @@ dataDir      = "data"
 layoutDir    = "layouts"
 publishDir   = "public"
 
-buildDrafts  = true
+buildDrafts  = false
 buildFuture  = true
 buildExpored = true
 canonifyURLs = true

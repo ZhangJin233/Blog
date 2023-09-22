@@ -85,3 +85,9 @@ jmeter -n -t [jmx脚本路径] -l [测试输出文件路径]
 9.打开cmd，通过命令运行JMeter
 
 10.输入一下命令开始执行测试
+
+
+
+#### 4.在chrome上使用BlazeMeter录制jmx文件
+
+可以参考这个文章：https://www.blazemeter.com/blog/jmeter-tutorial
