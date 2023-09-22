@@ -5,7 +5,7 @@ paginate = "10"
 theme = "hello-friend-ng"
 hasCJKLanguage = true
 # Google Analytics UA number 233
-googleAnalytics = "UA-141032533-1"
+googleAnalytics = "G-MXZENNMYL4"
 
 DefaultContentLanguage = "zh"
 
