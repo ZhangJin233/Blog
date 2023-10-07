@@ -71,7 +71,7 @@ baseName = "阿金's blog"
 
   # Metadata mostly used in document's head
   description = "阿金's blog"
-  keywords = "Hugo, blog, reading, kotlin, java, programming, python"
+  keywords = "Hugo, blog, reading, testing, java, automation, python"
   images = [""]
 
   homeSubtitle = "Hello"
@@ -105,6 +105,10 @@ baseName = "阿金's blog"
   [[params.social]]
     name = "github"
     url  = "https://github.com/ZhangJin233/"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/jin-zhang-48693023b/"
 
   # [[params.social]]
   #   name = "zhihu"
